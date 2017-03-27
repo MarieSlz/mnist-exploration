@@ -1,1 +1,5 @@
-# mnist-exploration
+## Exploration of the MNIST dataset
+
+# Output Folder
+
+The output directory contains analysis output, processed datasets, logs, or other processed things.
