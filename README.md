@@ -36,3 +36,4 @@ proj/
 ├── lib/
 └── output/
 ```
+Please see each subfolder for a README file.
