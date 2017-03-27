@@ -33,7 +33,8 @@ This repo has been organized as follows.
 proj/
 ├── data/
 ├── doc/
-├── lib/
+├── code/
+    └── lib/
 └── output/
 ```
 Please see each subfolder for a README file.
