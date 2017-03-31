@@ -37,6 +37,6 @@ proj/
 |   └── lib/
 └── output/
     ├── raw/
-    └── images/
+    └── figs/
 ```
 Please see each subfolder for a README file.
