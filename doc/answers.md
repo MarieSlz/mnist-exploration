@@ -29,8 +29,8 @@ Abbreviations: tp stands for true positive, fp for false positive and fn for fal
 ![Precision](../output/figs/output_0/precision.png)
 ![Recall](../output/figs/output_0/recall.png)
 
-For the remaining of this report, the error rate per class will be defined as the percentage of retrieved instances that are non-relevant (1-tp/(tp+fp))
-The test set error for each class is displayed below.
+Accuracy being high for most of the classes, precision and recall are not the good metrics to report. Hence, I will report the test error rate per class which I will define as the percentage of retrieved instances that are non-relevant (1-tp/(tp+fp))
+The test set error for each class is displayed below. We see on this graph that the error rate are not the same for all the classes.
 
 ![Test Error](../output/figs/output_0/test_error.png)
 
