@@ -19,7 +19,7 @@ The figs directory contains graphs and images.
 
 ### Summary of the findings
 
-|Output|Training Acc|Training Acc|
+|Output|Training Acc|Test Acc|
 |--------|-----|-----|
 |Output_0|95.32|98.59|
 |Output_1|95.02|98.65|
