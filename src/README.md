@@ -8,7 +8,8 @@ The code directory contains all codes.
 Run the model and Save the results (Raw results and Graphs) from the console.
 It will load or download the dataset, train the model and predict the results.
 example: 
-``` python run.py -i 10 -l 20 -f output_0 
+``` 
+python run.py -i 10 -l 20 -f output_0 
 ```
 arguments:
 - Level of noise in the images, the noise is a random normal variable, you can choose the standard deviation by using ( -i 20 ), the value should be between 0 and 255, default is 0
