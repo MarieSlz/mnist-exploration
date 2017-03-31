@@ -1,3 +1,7 @@
+'''
+Compile, Train, Test and Predict
+'''
+
 from lib.callbacks import LossHistory
 from lib.networks import LeNet
 import os

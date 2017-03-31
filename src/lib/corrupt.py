@@ -1,3 +1,7 @@
+'''
+Functions responsible for corrupting images or labels
+'''
+
 import numpy as np
 from keras.utils import np_utils
 
