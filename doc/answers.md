@@ -6,7 +6,7 @@ Overall Comments:
 - Test an train sets are the one predefined for the MNIST dataset. I am using this code to download the [dataset](https://github.com/tensorflow/tensorflow/blob/a5d8217c4ed90041bea2616c14a8ddcf11ec8c03/tensorflow/examples/tutorials/mnist/input_data.py).
 - The training is limited to a single epoch to save computation time.
 
-![Sample](./output/figs/sample_mnist_images.png)
+![Sample](../output/figs/sample_mnist_images.png)
 
 ### Part 1
 
