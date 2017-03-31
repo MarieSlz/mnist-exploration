@@ -22,8 +22,8 @@ The error rate is 1.41% after only one epoch of training on the original dataset
 
 We can use different metrics to report accuracy for multiclass classification. Below are reported:
 - the precision rate: percentage of retrieved instances that are relevant tp/(tp+fp)
-- the recall rate: percentage of relevant instances that are retrieved tp/(tp+fn)
-tp stand for true positive, fp for false positive and fn for false negative
+- the recall rate: percentage of relevant instances that are retrieved tp/(tp+fn)  
+tp stands for true positive, fp for false positive and fn for false negative
 
 ![Precision](../output/figs/output_0/precision.png)
 ![Recall](../output/figs/output_0/recall.png)
