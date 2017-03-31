@@ -8,7 +8,7 @@ Overall Comments:
 
 ![Sample](../output/figs/sample_mnist_images.png)
 
-### Part 1
+## Part 1
 
 **Choice of the Convolutional Neural Network**
 
@@ -63,7 +63,7 @@ Different methods could be used, however we have to keep in mind that the final 
 - Changing model: The network I chose is fairly simple, but using something like AlexNet would give better results. It's always possible to try to improve the model by adding layers, or changing activation functions.
 - Work on the inputs: Get more data (even if here we already have a training sample of a good size), invent more data (by randomly modifying version of existing images)
 
-### Part 2: Add Gaussian Noise to the Inputs
+## Part 2: Add Gaussian Noise to the Inputs
 
 In this part, I added Gaussian noise to the training set images. The mean is always set to 0 and the standard deviation respectively to 8, 32 and 128.
 
@@ -91,12 +91,12 @@ At first glance, it doesn't seem to be the case. You can see below the graph dis
 
 ![Test Error](../output/figs/output_3/test_error.png)
 
-### Part 3: Add Noise to the Labels
+## Part 3: Add Noise to the Labels
 
 In this part, I will replace randomly a percentage of the labels in the training set. The percentage of random labels is respectively 5%, 15% and 50%.
 Below you can see a graph displaying the error rate in function of the percentage of random labels in the training set.
 
-![Test Error](../output/fig/label_noise.png)
+![Test Error](../output/figs/label_noise.png)
 
 **How important are accurate training labels to classifier accuracy?**
 
