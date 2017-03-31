@@ -29,7 +29,7 @@ tp stand for true positive, fp for false positive and fn for false negative
 ![Recall](../output/figs/output_0/recall.png)
 
 For the remaining of this report, the error rate per class will be defined as the percentage of retrieved instances that are non-relevant (1-tp/(tp+fp))
-The test set error for each class is displayed below. 
+The test set error for each class is displayed below.
 
 ![Test Error](../output/figs/output_0/test_error.png)
 
@@ -93,8 +93,8 @@ Accurate training labels are really important to a classifier because we optimiz
 
 As shown on the graph below, the test error doesn't drastically decrease. However, when looking at the accuracy on the training set (shown below) one would conclude that the fit is poor, which is an issue.
 |Percentage|Train Acc|Test Acc|
-|-----|-----|
-|5%|90.87|98.51|
+|---|-----|-----|
+|5% |90.87|98.51|
 |15%|82.05|98.39|
 |50%|51.37|97.62|
 
