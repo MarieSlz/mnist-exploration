@@ -6,9 +6,9 @@ Overall Comments:
 - Test an train sets are the one predefined for the MNIST dataset. I am using this code to download the [dataset](https://github.com/tensorflow/tensorflow/blob/a5d8217c4ed90041bea2616c14a8ddcf11ec8c03/tensorflow/examples/tutorials/mnist/input_data.py).
 - The training is limited to a single epoch to save computation time.
 
-![Sample](output/figs/sample_mnist_images.png)
+![Sample](../output/figs/sample_mnist_images.png)
 
-### Part 1
+## Part 1
 
 **Choice of the Convolutional Neural Network**
 
@@ -25,17 +25,23 @@ We can use different metrics to report accuracy for multiclass classification. B
 - the recall rate: percentage of relevant instances that are retrieved tp/(tp+fn)
 tp stand for true positive, fp for false positive and fn for false negative
 
-![Precision](output/figs/output_0/precision.png)
-![Recall](output/figs/output_0/recall.png)
+![Precision](../output/figs/output_0/precision.png)
+![Recall](../output/figs/output_0/recall.png)
 
 For the remaining of this report, the error rate per class will be defined as the percentage of retrieved instances that are non-relevant (1-tp/(tp+fp))
 The test set error for each class is displayed below. We note that the error is significantly higher for the classes (0, 2, 4, 7 and 8), which means that have a higher rate of retrieved instances that are non-relevant.
 
-![Test Error](output/figs/output_0/test_error.png)
+![Test Error](../output/figs/output_0/test_error.png)
 
+<<<<<<< HEAD
 To have a good overview of the misclassification happening, the confusion matrix is the good accuracy measure to display.
 (to complete)
 ![Confusion Matrix](output/figs/output_0/confusion_matrix.png)
+=======
+To have a good overview of the misclassification happening, the confusion matrix is the good accuracy measure to display. On the matrix, we retrieve the conclusion drawn above by looking at the columns of the matrix. We learn that 3, 7 and 8 are sometimes predicted as 2, same for 6, 8 and 9 predicted as 4.
+
+![Confusion Matrix](../output/figs/output_0/confusion_matrix.png)
+>>>>>>> origin/master
 
 
 **Based only on information gathered in the first epoch of training, do you think that the model would benefit from more training time? Why?**
@@ -43,7 +49,7 @@ To have a good overview of the misclassification happening, the confusion matrix
 The loss per batch during the first epoch of training is displayed below, even if the loss decrease is not as important as in the beginning of the epoch, it seems to be still decreasing at the end of the epoch.
 To know for sure that we should continue the training, we would need to track the validation loss not the training loss. Because, decreasing the loss on the training set could lead to overfitting.
 
-![Loss](output/figs/output_0/loss_first_epoch.png)
+![Loss](../output/figs/output_0/loss_first_epoch.png)
 
 **Besides training for a longer time, what would you do to improve accuracy?**
 
@@ -52,14 +58,14 @@ Different methods could be used, however we have to keep in mind that the final 
 - Changing model: The network I chose is fairly simple, but using something like AlexNet would give better results. It's always possible to try to improve the model by adding layers, or changing activation functions.
 - Work on the inputs: Get more data (even if here we already have a training sample of a good size), invent more data (by randomly modifying version of existing images)
 
-### Part 2: Add Gaussian Noise to the Inputs
+## Part 2: Add Gaussian Noise to the Inputs
 
 In this part, I added Gaussian noise to the training set images. The mean is always set to 0 and the standard deviation respectively to 8, 32 and 128.
 
 The test error rate for the three situations is displayed below. Comparing the test error rate to the test error rate obtained in the first part, we notice that in the first two situations, it doesn't seem to affect the accuracy of the classifier.
 Going further, the test error is even lower than in the first experiment (1.41% vs 1.32% and 1.35%). Of course to have a strong conclusion, one would need to repeat those experiments to be sure it's not a coincidence, but we can already make suppositions.
 
-![Test Error](output/figs/image_noise.png)
+![Test Error](../output/figs/image_noise.png)
 
 **What are the implications of the dependence of accuracy on noise if you were to deploy a production classifier? How much noise do you think a production classifier could tolerate?**
 If the data is too noisy, the model will have a hard time classifying the test set.
@@ -78,14 +84,14 @@ What we need to pay attention to is overfitting, especially we need to make sure
 
 At first glance, it doesn't seem to be the case. You can see below the graph displaying test error rate for the different classes. Again, to have more robust results, one would need to repeat the experiments at good number of times.
 
-![Test Error](output/figs/output_3/test_error.png)
+![Test Error](../output/figs/output_3/test_error.png)
 
-### Part 3: Add Noise to the Labels
+## Part 3: Add Noise to the Labels
 
 In this part, I will replace randomly a percentage of the labels in the training set. The percentage of random labels is respectively 5%, 15% and 50%.
 Below you can see a graph displaying the error rate in function of the percentage of random labels in the training set.
 
-![Test Error](output/fig/label_noise.png)
+![Test Error](../output/figs/label_noise.png)
 
 **How important are accurate training labels to classifier accuracy?**
 
