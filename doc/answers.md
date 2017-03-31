@@ -36,7 +36,7 @@ The test set error for each class is displayed below.
 To have a good overview of the misclassification happening, the confusion matrix is the good accuracy measure to display.
 (to complete)
 
-![Confusion Matrix](output/figs/output_0/confusion_matrix.png)
+![Confusion Matrix](../output/figs/output_0/confusion_matrix.png)
 
 **Based only on information gathered in the first epoch of training, do you think that the model would benefit from more training time? Why?**
 
