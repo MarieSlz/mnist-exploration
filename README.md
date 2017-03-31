@@ -1,9 +1,9 @@
 # Exploration of the MNIST dataset
 
-## Project Summary:
+## Project Summary
 In this project, my goal is to train a convolutional neural network classifier on the MNIST data set and explore how image noise and label noise affect classifier accuracy.
 
-## Project Organisation:
+## Project Organisation
 My answers are available [here](doc/answers.md)
 
 **Part 1: Classifier on original data**
@@ -28,7 +28,7 @@ In this part, I will study the impact of label noise, I will first take 5% of th
 - If your real-world data had both image noise and label noise, which would you be more concerned about? Which is easier to compensate for?
 
 
-This repo has been organized as follows.
+## Repository Ogranisation
 ```
 proj/
 ├── data/
