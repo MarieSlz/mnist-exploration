@@ -93,11 +93,12 @@ Below you can see a graph displaying the error rate in function of the percentag
 Accurate training labels are really important to a classifier because we optimize the output based on those labels.
 
 As shown on the graph below, the test error doesn't drastically decrease. However, when looking at the accuracy on the training set (shown below) one would conclude that the fit is poor, which is an issue.
+
 |Percentage|Train Acc|Test Acc|
-|---|-----|-----|
-|5% |90.87|98.51|
-|15%|82.05|98.39|
-|50%|51.37|97.62|
+|-----|-----|-----|
+|5%   |90.87|98.51|
+|15%  |82.05|98.39|
+|50% |51.37|97.62|
 
 We see in the table that while the training accuracy drastically decreases, the test accuracy doesn't.
 - it seems like the network is relatively "robust" to the noise in the labels. The features built in the network are still relevant. However the loss function isn't because we don't know what to fit to. We know that some part of the labels are not correct.
