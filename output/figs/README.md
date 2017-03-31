@@ -18,7 +18,7 @@ The figs directory contains graphs and images.
 - output_6: percentage = 50%
 
 |Output|Training Acc|Training Acc|
-|-----|-----|
+|--------|-----|-----|
 |Output_0|95.32|98.59|
 |Output_1|95.02|98.65|
 |Output_2|94.90|98.68|
