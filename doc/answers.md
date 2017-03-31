@@ -2,7 +2,7 @@
 
 All the graphs and figures displayed in this document are reproducible using the main.py file in the src folder.
 
-Overall Comments:
+**Overall Comments**
 - Test an train sets are the one predefined for the MNIST dataset. I am using this code to download the [dataset](https://github.com/tensorflow/tensorflow/blob/a5d8217c4ed90041bea2616c14a8ddcf11ec8c03/tensorflow/examples/tutorials/mnist/input_data.py).
 - The training is limited to a single epoch to save computation time.
 
@@ -86,7 +86,8 @@ What we need to pay attention to is overfitting, especially we need to make sure
 **Is the accuracy of certain classes affected more by image noise than others? Why?**
 
 At first glance, it doesn't seem to be the case. You can see below the graph displaying the test error rate for the different classes. 
-However, to confirm this hypothesis, it would be good to do the following experiment: Run a good number of time the training and fitting part (100 times for example) and display the boxplots (with mean and standar deviation of the error rate for each class). This experiment will need to be run twice, one time on the original dataset and one time on the modified dataset with additional noise.
+However, to confirm this hypothesis, it would be good to do the following experiment: Run a good number of time the training and fitting part (100 times at least) and display the boxplots (with mean and standard deviation of the error rate for each class). This experiment will need to be run twice, one time on the original dataset and one time on the modified dataset with additional noise. The two figures could then be compared. 
+The modified dataset would be modified only once at the beginning
 
 ![Test Error](../output/figs/output_3/test_error.png)
 
