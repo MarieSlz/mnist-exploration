@@ -33,21 +33,10 @@ The test set error for each class is displayed below. We note that the error is 
 
 ![Test Error](output/figs/output_0/test_error.png)
 
-To have a good overview of the misclassification happening, the confusion matrix is the good accuracy measure to display. On the matrix, we retrieve the conclusion drawn above by looking at the columns of the matrix. We learn that 3, 7 and 8 are sometimes predicted as 2, same for 6, 8 and 9 predicted as 4.
-
+To have a good overview of the misclassification happening, the confusion matrix is the good accuracy measure to display.
+(to complete)
 ![Confusion Matrix](output/figs/output_0/confusion_matrix.png)
 
-By looking at the rows of the matrix, we know which classes have a high percentage of relevant instances that are not retrieved.
-
-Overall, the more recurrent misclassifications are:
-- 8s classified as 0s, 2s or 4s
-- 6s classified as 0s or 4s
-- 9s classified as 7s or 2s
-- 7s classified as 2s
-- 3s classified as 2s
-The contrary doesn't appear (0 classified as 8 or 6), we note that only more "complex" numbers are sometimes classified as more simples one.
-
-Note that the classes are not perfectly balanced in the test set (same in the train set), it's not a big issue here, but it's relevant to know that when reading the confusion matrix which is not in percentage.
 
 **Based only on information gathered in the first epoch of training, do you think that the model would benefit from more training time? Why?**
 
