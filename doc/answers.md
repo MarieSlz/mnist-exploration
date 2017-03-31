@@ -29,20 +29,14 @@ tp stand for true positive, fp for false positive and fn for false negative
 ![Recall](../output/figs/output_0/recall.png)
 
 For the remaining of this report, the error rate per class will be defined as the percentage of retrieved instances that are non-relevant (1-tp/(tp+fp))
-The test set error for each class is displayed below. We note that the error is significantly higher for the classes (0, 2, 4, 7 and 8), which means that have a higher rate of retrieved instances that are non-relevant.
+The test set error for each class is displayed below. 
 
 ![Test Error](../output/figs/output_0/test_error.png)
 
-<<<<<<< HEAD
 To have a good overview of the misclassification happening, the confusion matrix is the good accuracy measure to display.
 (to complete)
+
 ![Confusion Matrix](output/figs/output_0/confusion_matrix.png)
-=======
-To have a good overview of the misclassification happening, the confusion matrix is the good accuracy measure to display. On the matrix, we retrieve the conclusion drawn above by looking at the columns of the matrix. We learn that 3, 7 and 8 are sometimes predicted as 2, same for 6, 8 and 9 predicted as 4.
-
-![Confusion Matrix](../output/figs/output_0/confusion_matrix.png)
->>>>>>> origin/master
-
 
 **Based only on information gathered in the first epoch of training, do you think that the model would benefit from more training time? Why?**
 
