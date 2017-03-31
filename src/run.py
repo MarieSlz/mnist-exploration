@@ -69,6 +69,7 @@ if __name__ == "__main__":
     y_test_cat = np_utils.to_categorical(y_test)
 
     # Training Model
+    # Add noise in the labels or in the images if necessary
     if (args.noiseImages !=0 and args.noiseLabels == 0):
         print("[INFO] Adding Additional Gaussian Noise to the Images (std=", args.noiseImages,")", sep="")
         x_train_corrupted = corrupt.corrupt_images(x_train, args.noiseImages)
@@ -94,6 +95,7 @@ if __name__ == "__main__":
     (y_pred, accuracy) = model.fit(x_test, y_test_cat, trained_model, args.folder)
     path = os.path.join("../output/raw", args.folder, "y_pred.npy")
     np.save(path, y_pred)
+
     # Save and Plot results
     print("\n[INFO] Saving and Ploting results")
     # Confusion Matrix
