@@ -12,7 +12,7 @@ All the graphs and figures displayed in this document are reproducible using the
 
 **Choice of the Convolutional Neural Network**
 
-I am using the LeNet network. It offers at the same time a relatively good accuracy and a fast training time. The goal of this project is too focus on the impact of noise rather than to select the best hyperparameters, hence I am using parameters found in the [literature](http://www.pyimagesearch.com/2016/08/01/lenet-convolutional-neural-network-in-python/).
+I am using the LeNet network. It offers at the same time a relatively good accuracy and a fast training time. The goal of this project is to focus on the impact of noise rather than to select the best hyperparameters, hence I am using parameters found in the [literature](http://www.pyimagesearch.com/2016/08/01/lenet-convolutional-neural-network-in-python/).
 
 **What is the test error rate?**
 
